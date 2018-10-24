@@ -24,7 +24,7 @@
 
 ## Contents
 
-# We created 3 models, which each contains 1 table as follows:
+### We created 3 models, which each contains 1 table as follows:
 
 
 ### A model Lien for which each link has a user
