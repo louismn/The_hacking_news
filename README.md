@@ -1,24 +1,44 @@
 # README
 Réalisé par 
-Louis Martin du Nord @Louismn
+Louis Martin du Nord 
 Priscille de la Tour @Pris
 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
+#Requirements
    Ruby version : 2.5.1
    Ruby on Rails : 5.2.1
 
-AIM of the APP
 
-This is the database side to our rails application The hacking news, which aims to be a dashboard where users can create and comment articles. 
 
-They can also comment comments!
+This is the database side to our rails application The hacking news, which aims to become later a dashboard where users can create and comment articles. 
 
-To run the app you just have to do the Bundle install to install the gems from the Gemfile.
+They will also be able to comment comments!
+
+To run the app you just have git clone the this repositiry and do the bundle install to install the gems from the Gemfile.
+
+
+#Contents
+
+We created 3 models, which each contains 1 table as follows:
+
+A model Lien for which each link has a user
+Table liens:
+-> user
+-> lien
+
+A model AComment in which we link each lien with its comments
+Table a_comments
+-> a_comment
+-> lien_id
+
+A model BComment in which we link each primary comment (AComment) to its sub²comment (BComment)
+Table b_comments
+-> b_comment
+-> a_comment_id
+
+
+
+
 
 
 
